@@ -6,6 +6,8 @@ build a timeline from a folder of takes, give it a consistent look, pre-mix the 
 
 Leave it running, review the result in the morning. The original media is never modified or deleted.
 
+▶️ **[Watch the 37-second demo](https://github.com/costagonzaga/resolve-autopilot/releases/tag/v0.1.0)** (video attached to the release)
+
 🇧🇷 [Leia em português](README.pt-BR.md)
 
 ## What is this, in plain words

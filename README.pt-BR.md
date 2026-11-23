@@ -6,6 +6,8 @@ monte a timeline a partir de uma pasta de takes, aplique um visual consistente, 
 
 Deixe rodando e revise o resultado de manhã. A mídia original nunca é alterada nem apagada.
 
+▶️ **[Veja o vídeo de 37 segundos](https://github.com/costagonzaga/resolve-autopilot/releases/tag/v0.1.0)** (anexado à release)
+
 🇺🇸 [Read in English](README.md)
 
 ## O que é isso, em português simples
