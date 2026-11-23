@@ -8,6 +8,29 @@ Deixe rodando e revise o resultado de manhã. A mídia original nunca é alterad
 
 🇺🇸 [Read in English](README.md)
 
+## O que é isso, em português simples
+
+Quem edita vídeo no DaVinci Resolve repete as mesmas tarefas: colocar os takes em ordem, dar
+zoom e cor, acertar o volume da voz e da música, pôr efeitos e títulos animados. O Resolve Autopilot
+faz essas tarefas por comandos, e funciona junto com o Claude Code (uma IA que programa): você
+descreve o que quer, ele monta uma **cópia** da sua edição, e você revisa de manhã. Seus vídeos
+originais nunca são alterados.
+
+## Quer ajudar? Leva 30 segundos
+
+Este projeto é novo e **precisa de gente de verdade usando e comentando**. Você não precisa saber programar:
+
+1. ⭐ **Dê uma estrela.** Clique em **Star**, no topo direito desta página (precisa de uma conta
+   gratuita no GitHub, que se cria em 2 minutos). Isso ajuda o projeto a ser encontrado.
+2. 💬 **Comente.** Abra a [issue "Diga oi"](https://github.com/costagonzaga/resolve-autopilot/issues/4),
+   escreva uma frase (por exemplo: "edito vídeo no DaVinci e quero testar") e clique em **Comment**.
+3. 🧪 **Teste, se usa Mac ou Linux.** As issues
+   [#1](https://github.com/costagonzaga/resolve-autopilot/issues/1) e
+   [#2](https://github.com/costagonzaga/resolve-autopilot/issues/2) explicam o passo a passo.
+4. 📤 **Mande o link** para quem edita vídeo no DaVinci.
+
+Obrigado, de verdade.
+
 ## O que tem
 
 - **Conexão** com o Resolve no Windows, macOS e Linux, com mensagem clara quando ele não responde.

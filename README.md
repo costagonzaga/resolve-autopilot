@@ -8,6 +8,26 @@ Leave it running, review the result in the morning. The original media is never 
 
 🇧🇷 [Leia em português](README.pt-BR.md)
 
+## What is this, in plain words
+
+People who edit in DaVinci Resolve repeat the same chores: putting takes in order, adding zoom and
+colour, levelling voice and music, adding sound effects and animated titles. Resolve Autopilot does
+those chores from commands, and works with Claude Code (an AI that programs): you describe what you
+want, it builds a **copy** of your edit, and you review it in the morning. Your original files are
+never changed.
+
+## Want to help? It takes 30 seconds
+
+The project is new and **needs real people using and commenting**. You do not need to code:
+
+1. ⭐ **Star it.** Click **Star** at the top right of this page (needs a free GitHub account).
+2. 💬 **Say hi.** Open the ["Say hi" issue](https://github.com/costagonzaga/resolve-autopilot/issues/4),
+   write one sentence (for example: "I edit in Resolve and want to try this") and click **Comment**.
+3. 🧪 **Test it on macOS or Linux:** issues
+   [#1](https://github.com/costagonzaga/resolve-autopilot/issues/1) and
+   [#2](https://github.com/costagonzaga/resolve-autopilot/issues/2) explain the steps.
+4. 📤 **Send the link** to someone who edits video in Resolve.
+
 ## Why
 
 Resolve's scripting API is powerful but awkward: the module is not on PyPI, setup differs per OS,
