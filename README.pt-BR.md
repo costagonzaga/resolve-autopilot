@@ -37,6 +37,22 @@ resolve-autopilot add-audio "Meu reel v2" ./audio
 resolve-autopilot render "Meu reel v2" ./saida reel --size 1080 1920
 ```
 
+## Motion: Resolve + Remotion
+
+O Resolve edita, o [Remotion](https://www.remotion.dev) desenha os gráficos animados e o
+`resolve-autopilot` faz a ponte: renderiza um clipe **ProRes 4444 transparente** no tamanho e
+no frame rate da sua timeline e o coloca numa trilha nova acima da V1 de uma timeline *duplicada*.
+Seus takes nunca são tocados.
+
+```bash
+cd motion && npm install && cd ..        # uma vez; precisa de Node.js 20+
+resolve-autopilot motion "Meu reel v2" "Meu reel v3" \
+    --lead "o segredo é" --word "CONSISTÊNCIA" --at 3.5 --duration 2.5
+```
+
+O template (`motion/src/TitleHighlight.tsx`) tem uma linha branca pequena e uma palavra grande
+amarela em Poppins que entra com mola e some com fade. Copie-o para criar os seus.
+
 ## Situação
 
 Versão inicial (v0.1), testada no Windows com Resolve Studio 21. Os caminhos de macOS e Linux seguem

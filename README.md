@@ -69,6 +69,23 @@ resolve-autopilot inspect
 
 Use it as a library too: `from resolve_autopilot.timeline import apply_look, Look`.
 
+## Motion graphics: Resolve + Remotion
+
+Resolve edits, [Remotion](https://www.remotion.dev) draws the animated graphics (it is much better at
+text and shapes), and `resolve-autopilot` is the bridge. It renders a **transparent ProRes 4444** clip at
+your timeline's exact size and frame rate, then places it on a new video track above V1 of a *duplicate*
+timeline. Your takes are never touched.
+
+```bash
+cd motion && npm install && cd ..        # once; needs Node.js 20+
+resolve-autopilot motion "My reel v2" "My reel v3" \
+    --lead "the secret is" --word "CONSISTENCY" --at 3.5 --duration 2.5
+```
+
+The bundled template (`motion/src/TitleHighlight.tsx`) is a small white lead line plus one big yellow
+Poppins word that springs in and fades out. Copy it to make your own templates: any Remotion
+composition can be rendered and placed the same way. Tested on Windows with Resolve Studio 21.
+
 ## Using it with Claude Code
 
 Copy `skills/resolve-autopilot` into your project's `.claude/skills/` and ask
