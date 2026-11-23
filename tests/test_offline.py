@@ -33,5 +33,5 @@ def test_look_cdl_keys():
 
 def test_cli_parser_knows_all_commands():
     parser = cli.build_parser()
-    for command in ["check", "build f n", "look a b", "mix t m o", "add-audio t d", "render t o f", "inspect"]:
+    for command in ["check", "build f n", "look a b", "mix t m o", "add-audio t d", "render t o f", "motion a b --word X", "inspect"]:
         assert parser.parse_args(command.split()).command == command.split()[0]

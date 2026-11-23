@@ -39,6 +39,15 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("file_name")
     p.add_argument("--size", nargs=2, type=int, metavar=("W", "H"), help="e.g. --size 1080 1920")
 
+    p = sub.add_parser("motion", help="Render a Remotion title (transparent) and place it on a new video track.")
+    p.add_argument("source")
+    p.add_argument("new_name")
+    p.add_argument("--lead", default="", help="Small line above the big word.")
+    p.add_argument("--word", required=True, help="The big highlighted word.")
+    p.add_argument("--at", type=float, default=1.0, help="Start time in seconds.")
+    p.add_argument("--duration", type=float, default=2.5, help="Length in seconds.")
+    p.add_argument("--out-dir", default="motion-out")
+
     p = sub.add_parser("inspect", help="Read-only JSON report of the timelines.")
     p.add_argument("names", nargs="*")
     return parser
@@ -68,6 +77,11 @@ def main(argv: list[str] | None = None) -> None:
         from .render import render_timeline
         width, height = args.size if args.size else (None, None)
         print("Final:", render_timeline(args.timeline, args.out_dir, args.file_name, width, height))
+    elif args.command == "motion":
+        from .motion import add_title
+        _, info = add_title(args.source, args.new_name, args.lead, args.word, args.at,
+                            args.duration, args.out_dir)
+        print(json.dumps(info, indent=1))
     elif args.command == "inspect":
         from .inspect_project import main as inspect_main
         inspect_main(args.names or None)
