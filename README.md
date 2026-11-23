@@ -33,10 +33,16 @@ rediscover:
 ## Install
 
 ```bash
+pip install "resolve-autopilot[ffmpeg] @ git+https://github.com/costagonzaga/resolve-autopilot"
+resolve-autopilot check
+```
+
+To hack on it instead:
+
+```bash
 git clone https://github.com/costagonzaga/resolve-autopilot
 cd resolve-autopilot
-pip install -e ".[ffmpeg]"
-resolve-autopilot check
+pip install -e ".[dev,ffmpeg]"
 ```
 
 ## Usage

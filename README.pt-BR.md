@@ -28,9 +28,7 @@ Deixe rodando e revise o resultado de manhã. A mídia original nunca é alterad
 ## Instalar e usar
 
 ```bash
-git clone https://github.com/costagonzaga/resolve-autopilot
-cd resolve-autopilot
-pip install -e ".[ffmpeg]"
+pip install "resolve-autopilot[ffmpeg] @ git+https://github.com/costagonzaga/resolve-autopilot"
 resolve-autopilot check
 resolve-autopilot build ./takes "Meu reel"
 resolve-autopilot look "Meu reel" "Meu reel v2"
